@@ -26,7 +26,7 @@ header .container .header_nav .header_nav-list .nav_list-element {
 header .container .header_nav .header_nav-list .nav_list-element .nav_element-link {
   text-decoration: none;
   color: rgba(12, 27, 77, 0.6);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -59,4 +59,9 @@ header .container .header_nav .header_nav-list .nav_list-element .nav_element-li
 .main_section .container .main_image-wrap .main-image {
   display: block;
   width: 100%;
+}
+.main_section .container .main_section-text h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 58px;
+  color: #171A23;
 }/*# sourceMappingURL=main.css.map */
