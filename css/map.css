@@ -1,22 +1,25 @@
 @import "./owl.carousel.css";
 @import "./owl.theme.default.css";
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Noto+Sans:wght@200&family=Philosopher:ital@0;1&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:wght@300&family=Noto+Sans:wght@200&family=Philosopher:ital@0;1&family=Special+Elite&display=swap');
+
 
 * {
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Cinzel+Decorative:wght@400;700;900&family=Noto+Sans:wght@200&family=Philosopher:ital@0;1&family=Special+Elite&display=swap');
 
-h1 {
-    position: fixed;
-    top: 1%;
-    left: 50%;
+h4 {
+    position: sticky;
+    background-color: rgba(72, 93, 190, 0.7);
+    color: rgba(255, 255, 255, 0.60);
+    top: 3%;
     font-size: 2vw;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
-    transform: translateX(-50%);
     z-index: 999;
+    padding: 1% 0%;
 }
 
 .owl-carousel {
@@ -24,7 +27,26 @@ h1 {
     position: relative;
 }
 
-.labels_south {
+.map_carousel {
+    position: relative;
+}
+
+#south,
+#north,
+#center {
+    font-family: 'Montserrat',
+        sans-serif;
+    color: rgba(72, 93, 190, 1);
+    position: fixed;
+    text-align: center;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: bold;
+    z-index: 9999;
+}
+
+.labels {
     max-width: 3vw;
 }
 
@@ -32,47 +54,69 @@ h1 {
 .popup {
     display: none;
     position: absolute;
-    background-color: #b5b4b8;
+    background-color: rgba(72, 93, 190, 1);
     padding: 10px;
     border: 1px solid #555556;
     border-radius: 10%;
     border-bottom-left-radius: 0%;
 }
 
-.labels_south:hover+.popup,
+.labels:hover+.popup,
 .popup:hover,
 .popup_ulpan:hover {
     display: block;
 }
 
+#eilat,
+#ashdod,
+#ashkelon,
+#netanya,
+#rishon,
+#telaviv,
+#petah,
+#raanana,
+#jerusalem,
+#karmiel,
+#haifa,
+#kiryat {
+    max-width: 3vw;
+    position: absolute;
+}
+
+#popup1,
+#popup2,
+#popup3,
+#popup6,
+#popup7,
+#popup8,
+#popup9,
+#popup10,
+#popup11,
+#popup12,
+#popup13,
+#popup14 {
+    position: absolute;
+}
 
 #popup1 {
-    position: absolute;
+
+    left: 10%;
+    top: 70%;
+    transform: translate(-10%, -70%);
+    z-index: 9999;
+}
+
+#eilat {
+    left: 10%;
+    top: 70%;
+}
+
+#popup10 {
     right: 10%;
     top: 50%;
     transform: translate(-10%, -50%);
     z-index: 9999;
 
-}
-
-#raanana,
-#raa {
-    max-width: 3vw;
-    position: absolute;
-}
-
-#popup2 {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translate(-10%, -50%);
-    z-index: 9999;
-
-}
-
-#raa {
-    left: 10%;
-    top: 50%;
 }
 
 #raanana {
@@ -84,9 +128,18 @@ h1 {
     padding: 1vw;
     font-family: 'Noto Sans', sans-serif;
     font-size: 2vw;
-    color: rgb(26, 26, 30);
+
     text-align: center;
     line-height: 200%;
+}
+
+.popup_ulpan .ulpan_name {
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.popup_ulpan .phone {
+    color: rgba(255, 255, 255, 0.70);
 }
 
 a:link {
@@ -96,7 +149,7 @@ a:link {
 a:visited,
 a:active,
 a:focus {
-    color: rgb(30, 25, 74);
+    color: rgba(255, 255, 255, 0.60);
 }
 
 a:hover {
@@ -109,11 +162,8 @@ a:hover {
 
 
 .owl-carousel .owl-nav {
-    position: fixed;
-    left: 50%;
-    /* transform: translate(-50%); */
-    top: 4vw;
-    margin: 0;
+    position: absolute;
+    top: 50%;
 }
 
 .owl-carousel .owl-nav svg {
@@ -128,15 +178,3 @@ a:hover {
 .owl-carousel .owl-nav [class*="owl-"]:hover {
     background: transparent;
 }
-
-
-/* @media screen and (max-width: 100%) {
-    .owl-carousel .owl-nav {
-        top: 1%;
-    }
-
-    .owl-carousel .owl-nav svg {
-        width: 24px;
-        height: 24px;
-    }
-}  */

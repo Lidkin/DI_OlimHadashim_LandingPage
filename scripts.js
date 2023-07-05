@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    const $owlCarousel = $(".owl-carousel").owlCarousel({
+    const $owlCarousel = $(".owl-carousel-1").owlCarousel({
         items: 1,
         loop: false,
         nav: true,
@@ -18,32 +18,36 @@ $(document).ready(function () {
 
         const $navPrev = $(this.$element).find('.owl-prev');
         const $navNext = $(this.$element).find('.owl-next');
+        const $nav = $(this.$element).find('.owl-nav');
 
         // Скрываем или показываем навигационные стрелки в зависимости от текущего индекса
         if (currentIndex === 0) {
             $navPrev.hide();
 
             $navNext.show();
-            $navNext.css('transform', 'translateX(0%)');
+            $navNext.css('transform', 'translateX(89vw)');
 
         } else if (currentIndex === totalItems - 1) {
+            // $navPrev.css('left', '5%');
             $navPrev.show();
-            $navPrev.css('transform', 'translateX(-100%)');
+            $navPrev.css('transform', 'translateX(5vw)');
 
             $navNext.hide();
 
         } else {
             $navPrev.show();
-            $navPrev.css('transform', 'translateX(-100%)');
+            // $navPrev.css('right', '5vw');
+            $navPrev.css('transform', 'translateX(5vw)');
 
             $navNext.show();
-            $navNext.css('transform', 'translateX(-100%)');
+            // $navNext.css('left', '5vw');
+            $navNext.css('transform', 'translateX(84vw)');
 
         }
     }
 
 
-    $('.labels_south .popup_ulpan').hover(function () {
+    $('.labels .popup_ulpan').hover(function () {
         var popupId = $(this).data('popup');
         $('#' + popupId).show();
     }, function () {
