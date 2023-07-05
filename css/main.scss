@@ -13,22 +13,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 
 
+$main_blue: #0071EF;
+$main_text_color: #171A23;
+$Noto_font: 'Noto Sans',sans-serif;
+$Montserrat_font: 'Montserrat',sans-serif;
+
+@mixin h_underline {
+    content: '';
+    border-bottom: 2px solid $main_text_color;
+    width: 60px;
+    height: 2px;
+    margin-bottom: 70px;
+}
+
+@mixin h3 {
+    color: #171A23;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+@mixin h_span {
+    color: rgba(12.43, 26.53, 76.50, 0.60);
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 70px;
+}
+
+@mixin image_100{
+    display: block;
+    width: 100%;
+}
+
+
+
 body {
     background-color: #F9FAFA;
     overflow-x: hidden;
-}
-
-body::-webkit-scrollbar {
-    width: 1em;
-}
-
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #3d2edf, rgb(153, 183, 230));
-    border-radius: 20px;
 }
 
 
@@ -54,8 +81,7 @@ body::-webkit-scrollbar-thumb {
             animation-duration: 3s;
 
             .main-image {
-                display: block;
-                width: 100%;
+                @include image_100;
             }
         }
 
@@ -66,8 +92,8 @@ body::-webkit-scrollbar-thumb {
             animation-duration: 2s;
 
             h1 {
-                font-family: 'Montserrat', sans-serif;
-                color: #171A23;
+                font-family: $Montserrat_font;
+                color: $main_text_color;
                 font-size: 58px;
                 font-weight: 700;
                 line-height: 75.40px;
@@ -75,7 +101,7 @@ body::-webkit-scrollbar-thumb {
             }
 
             p {
-                font-family: 'Noto Sans', sans-serif;
+                font-family: $Noto_font;
                 color: rgb(12, 27, 77, 60%);
                 font-size: 21px;
                 font-weight: 400;
@@ -86,18 +112,18 @@ body::-webkit-scrollbar-thumb {
 
             input {
                 padding: 15px 130px 15px 15px;
-                border: 1px #0071EF solid;
+                border: 1px $main_blue solid;
                 background-color: rgba(255, 255, 255, 1);
                 margin-right: 20px;
                 font-size: 16px;
-                font-family: 'Noto Sans', sans-serif;
+                font-family: $Noto_font;
                 font-weight: 400;
                 color: #171A23;
 
                 &:placeholder-shown {
                     color: rgba(12, 27, 77, 0.60);
                     font-size: 16px;
-                    font-family: 'Noto Sans', sans-serif;
+                    font-family: $Noto_font;
                     font-weight: 400;
                 }
             }
@@ -105,10 +131,10 @@ body::-webkit-scrollbar-thumb {
             button {
                 color: white;
                 font-size: 16px;
-                font-family: 'Noto Sans', sans-serif;
+                font-family: $Noto_font;
                 font-weight: 700;
                 padding: 15px 35px;
-                background-color: #0071EF;
+                background-color: $main_blue;
                 border-style: none;
                 transition: all .2s ease-in-out;
 
@@ -137,36 +163,19 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
 
         h3 {
-            color: #171A23;
-            font-size: 36px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+            @include h3;
 
             &::after {
-                content: '';
-                border-bottom: 2px solid #171A23;
-                width: 60px;
-                height: 2px;
-                margin-bottom: 15px;
+                @include h_underline;
             }
         }
 
         span {
-            color: rgba(12.43, 26.53, 76.50, 0.60);
-            font-size: 16px;
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 400;
-            line-height: 26px;
-            max-width: 530px;
-            margin-bottom: 70px;
+            @include h_span;
         }
 
         .about_section-card {
-            background-color: #485DBE;
+            background-color: $main_blue;
             padding: 50px;
             align-items: center;
             display: flex;
@@ -183,7 +192,7 @@ body::-webkit-scrollbar-thumb {
                 .about_section-p {
                     color: rgba(255, 255, 255, 0.80);
                     font-size: 21px;
-                    font-family: 'Noto Sans', sans-serif;
+                    font-family: $Noto_font;
                     font-weight: 400;
                     line-height: 27.30px;
                     margin-bottom: 25px;
@@ -193,7 +202,7 @@ body::-webkit-scrollbar-thumb {
                 button {
                     color: rgba(0, 113, 239, 0.70);
                     font-size: 17px;
-                    font-family: 'Noto Sans', sans-serif;
+                    font-family: $Noto_font;
                     font-weight: 600;
                     line-height: 28px;
                     background-color: rgba(255, 255, 255, 1);
@@ -270,21 +279,10 @@ body::-webkit-scrollbar-thumb {
     }
 
     h3 {
-        color: #171A23;
-        font-size: 36px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        @include h3;
 
         &::after {
-            content: '';
-            border-bottom: 2px solid #171A23;
-            width: 60px;
-            height: 2px;
-            margin-bottom: 70px;
+            @include h_underline;
         }
     }
 
@@ -307,10 +305,9 @@ body::-webkit-scrollbar-thumb {
             align-items: center;
 
             img {
-                width: 100%;
+                @include image_100;
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
-                display: block;
                 margin-bottom: 15px;
             }
 
@@ -320,9 +317,9 @@ body::-webkit-scrollbar-thumb {
                 position: relative;
 
                 span {
-                    color: #171A23;
+                    color: $main_text_color;
                     font-size: 21px;
-                    font-family: 'Montserrat', sans-serif;
+                    font-family: $Montserrat_font;
                     font-weight: 600;
                     line-height: 32px;
                     display: block;
@@ -332,7 +329,7 @@ body::-webkit-scrollbar-thumb {
                 p {
                     color: rgba(12, 27, 77, 0.60);
                     font-size: 16px;
-                    font-family: 'Noto Sans', sans-serif;
+                    font-family: $Noto_font;
                     font-weight: 300;
                     line-height: 28px;
                     max-width: 280px;
@@ -341,7 +338,7 @@ body::-webkit-scrollbar-thumb {
                 .card-read_more {
                     color: rgba(0, 113, 239, 0.70);
                     font-size: 17px;
-                    font-family: 'Noto Sans', sans-serif;
+                    font-family: $Noto_font;
                     font-weight: 600;
                     line-height: 28px;
                     position: absolute;
@@ -367,7 +364,7 @@ body::-webkit-scrollbar-thumb {
     .owl-carousel .owl-nav button.owl-next,
     .owl-carousel .owl-nav button.owl-prev {
         border: none;
-        background-color: #0071EF;
+        background-color: $main_blue;
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -415,21 +412,10 @@ body::-webkit-scrollbar-thumb {
     }
 
     h3 {
-        color: #171A23;
-        font-size: 36px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        @include h3;
 
         &::after {
-            content: '';
-            border-bottom: 2px solid #171A23;
-            width: 60px;
-            height: 2px;
-            margin-bottom: 70px;
+            @include h_underline
         }
     }
 
@@ -438,9 +424,9 @@ body::-webkit-scrollbar-thumb {
         text-align: left;
 
         h4 {
-            color: #171A23;
+            color: $main_text_color;
             font-size: 38px;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $Montserrat_font;
             font-weight: 700;
             line-height: 49.40px;
             margin-bottom: 25px;
@@ -449,7 +435,7 @@ body::-webkit-scrollbar-thumb {
         p {
             color: rgba(12.43, 26.53, 76.50, 0.60);
             font-size: 22px;
-            font-family: 'Noto Sans', sans-serif;
+            font-family: $Noto_font;
             font-weight: 400;
             line-height: 28.60px;
 
@@ -458,7 +444,7 @@ body::-webkit-scrollbar-thumb {
                 max-width: 900px;
 
                 a {
-                    color: #0071EF;
+                    color: $main_blue;
                     font-weight: bold;
                 }
             }
@@ -501,8 +487,7 @@ body::-webkit-scrollbar-thumb {
                 }
 
                 img {
-                    display: block;
-                    width: 100%;
+                    @include image_100;
                     margin-bottom: 3px;
                 }
 
@@ -511,9 +496,9 @@ body::-webkit-scrollbar-thumb {
                     bottom: 25px;
 
                     h5 {
-                        color: #171A23;
+                        color: $main_text_color;
                         font-size: 21px;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $Montserrat_font;
                         font-weight: 600;
                         line-height: 32px;
                         margin-bottom: 10px;
@@ -523,15 +508,15 @@ body::-webkit-scrollbar-thumb {
                         margin-bottom: 20px;
                         color: rgba(12, 27, 77, 0.60);
                         font-size: 16px;
-                        font-family: 'Noto Sans', sans-serif;
+                        font-family: $Noto_font;
                         font-weight: 300;
                         line-height: 28px;
                     }
 
                     a {
-                        color: #0071EF;
+                        color: $main_blue;
                         font-size: 21px;
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: $Montserrat_font;
                         font-weight: 600;
                         line-height: 32px;
                         margin-top: 15px;
@@ -550,31 +535,15 @@ body::-webkit-scrollbar-thumb {
         max-width: 530px;
 
         h3 {
-            color: #171A23;
-            font-size: 36px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+            @include h3;
 
             &::after {
-                content: '';
-                border-bottom: 2px solid #171A23;
-                width: 60px;
-                height: 2px;
-                margin-bottom: 15px;
+                @include h_underline
             }
         }
 
         span {
-            color: rgba(12.43, 26.53, 76.50, 0.60);
-            font-size: 16px;
-            font-family: 'Noto Sans', sans-serif;
-            font-weight: 400;
-            line-height: 26px;
-            margin-bottom: 70px;
+            @include h_span
         }
     }
 }
