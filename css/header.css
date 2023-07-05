@@ -10,7 +10,7 @@ header .container {
 header .container .logo {
   display: block;
   width: 102px;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 header .container .header_nav {
   max-width: 440px;
@@ -21,16 +21,20 @@ header .container .header_nav .header_nav-list {
 }
 header .container .header_nav .header_nav-list .nav_list-element {
   margin: 0 15px;
+  transition: all 0.2s ease-in-out;
+}
+header .container .header_nav .header_nav-list .nav_list-element:hover {
+  transform: scale(1.1);
 }
 header .container .header_nav .header_nav-list .nav_list-element .nav_element-link {
   text-decoration: none;
   color: rgba(12, 27, 77, 0.6);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  transition: all 200ms linear;
 }
 header .container .header_nav .header_nav-list .nav_list-element .nav_element-link:hover {
   color: #0071EF;
-  transition: all 200ms linear;
 }/*# sourceMappingURL=header.css.map */

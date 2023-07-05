@@ -10,7 +10,7 @@ header {
         .logo {
             display: block;
             width: 102px;
-            margin-right: 40px;
+            margin-right: 60px;
         }
 
         .header_nav {
@@ -22,18 +22,24 @@ header {
 
                 .nav_list-element {
                     margin: 0 15px;
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
 
                     .nav_element-link {
                         text-decoration: none;
                         color: rgb(12, 27, 77, 60%);
-                        font-family: 'Montserrat', sans-serif;
+                        font-family: 'Roboto', sans-serif;
                         font-size: 16px;
                         font-weight: 500;
                         cursor: pointer;
-                        &:hover{
+                        transition: all 200ms linear;
+
+                        &:hover {
                             color: #0071EF;
-                            transition: all 200ms linear;
-                        
+
                         }
                     }
                 }
