@@ -32,17 +32,17 @@ h4 {
 }
 
 #south,
-#north,
-#center {
+#north {
     font-family: 'Montserrat',
         sans-serif;
     color: rgba(72, 93, 190, 1);
     position: fixed;
     text-align: center;
-    top: 7%;
+    top: 2%;
     left: 50%;
     transform: translate(-50%);
     font-weight: bold;
+    font-size: 2vw;
     z-index: 9999;
 }
 
@@ -96,41 +96,106 @@ h4 {
 #popup13,
 #popup14 {
     position: absolute;
+    transform: translateX(-95%);
+    z-index: 9999;
+}
+
+#popup1,
+#eilat {
+    left: 5%;
+    top: 83%;
 }
 
 #popup1 {
-
-    left: 10%;
-    top: 70%;
-    transform: translate(-10%, -70%);
-    z-index: 9999;
+    transform: translateX(5%);
 }
 
-#eilat {
-    left: 10%;
-    top: 70%;
+#popup2,
+#ashdod {
+    left: 60%;
+    top: 10%;
 }
 
-#popup10 {
-    right: 10%;
-    top: 50%;
-    transform: translate(-10%, -50%);
-    z-index: 9999;
+#popup3,
+#ashkelon {
+    left: 55%;
+    top: 7%;
+}
 
+#popup6,
+#netanya {
+    left: 12%;
+    top: 20%;
+}
+
+#popup7,
+#rishon {
+    left: 80%;
+    top: 15%;
+}
+
+#telaviv,
+#popup8 {
+    left: 85%;
+    top: 17%;
+}
+
+#petah {
+    left: 89%;
+    top: 35%;
+}
+
+#popup9 {
+    top: 25%;
+    left: 80%;
+    transform: translateX(-2%);
 }
 
 #raanana {
-    right: 10%;
-    top: 50%;
+    left: 95%;
+    top: 20%;
+}
+
+#popup10 {
+    top: 20%;
+    left: 85%;
+    transform: translateX(-2%);
+}
+
+#popup11,
+#jerusalem {
+    left: 76%;
+    top: 62%;
+}
+
+#popup12,
+#karmiel {
+    left: 60%;
+    top: 60%;
+}
+
+#popup13,
+#haifa {
+    left: 53%;
+    top: 20%;
+}
+
+#popup14,
+#kiryat {
+    left: 64%;
+    top: 29%;
 }
 
 .popup_ulpan {
     padding: 1vw;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 2vw;
-
+    font-size: 1vw;
     text-align: center;
     line-height: 200%;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.60);
 }
 
 .popup_ulpan .ulpan_name {
