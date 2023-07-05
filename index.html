@@ -1,205 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OlimHadashim_LandingPage</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/map.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
 </head>
 
+
 <body>
-    <header>
-        <div class="container">
-            <img src="images/Logo.svg" alt="logo" class="logo">
-            <nav class="header_nav">
-                <ul class="header_nav-list">
-                    <li class="nav_list-element"><a class="nav_element-link" href="#">About</a></li>
-                    <li class="nav_list-element"><a class="nav_element-link" href="#">Ulpan</a></li>
-                    <li class="nav_list-element"><a class="nav_element-link" href="#">Education</a></li>
-                    <li class="nav_list-element"><a class="nav_element-link" href="#">Healthcare</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <section class="main_section">
-        <div class="container">
-            <div class="main_image-wrap animate__animated animate__fadeInRight">
-                <img class="main-image" src="./images/Right_Graphic-MainSection.png" alt="image">
-            </div>
-            <div class="main_section-text animate__animated animate__fadeInLeft">
-                <h1>Planning<br>
-                    Your Life in Israel?</h1>
-                <p>Planning for Aliyah is more than just the application and paperwork – you also need to plan your life
-                    in
-                    a new country,
-                    culture, and language.</p>
-                <input type="text" placeholder="Enter your e-mail">
-                <button class="glow-on-hover" type="submit">Subscribe</button>
-            </div>
-        </div>
-    </section>
-    <section class="about_section">
-        <div class="container">
-            <h3 class="wow fadeIn" data-wow-delay="0.3s">About us</h3>
-            <span class="wow fadeIn" data-wow-delay="0.5s">Our mission is to facilitate and celebrate Aliyah, advocate for Olim, <br> and educate towards a
-                stronger connection to
-                Israel.</span>
-            <div class="about_section-card">
-                <div class="about_section-text">
-                    <p class="about_section-p">In 2018 alone, we helped more than 30,000 Jews start new lives in Israel
-                        with crucial information and support systems
-                        for the time before, during, and after making Aliyah. Each year, tens of thousands of Jews from
-                        around the world
-                        decide
-                        to make Israel the setting of their life stories, and we are there for every single one.</p>
-                    <button type="button">Read More</button>
-                </div>
-                <div class="about_image-wraper">
-                    <img class="about-image" src="./images/about-image.png" alt="image">
-                </div>
-            </div>
-        </div>
-        <div class="about_section-partners">
-            <div class="partners_logos-wrapper">
-                <img class="partners-logos" src="./images/partners-logo/1.png" alt="logo">
-                <img class="partners-logos" src="./images/partners-logo/2.png" alt="logo">
-                <img class="partners-logos" src="./images/partners-logo/3.png" alt="logo">
-                <img class="partners-logos" src="./images/partners-logo/4.png" alt="logo">
-            </div>
-        </div>
+    <section>
+        <div style="width: 500px; height: 500px;"></div>
+
     </section>
 
-    <section class="education_section">
-        <h3 class="wow fadeIn" data-wow-delay="0.5">Education</h3>
-        <div class="education_section-wrapper">
-            <div class="owl-carousel owl-theme owl-carousel-2 ">
-                <article class="education-cards">
-                    <img src="./images/art1.png" alt="">
-                    <div class="card-text">
-                        <span>Child and Teen Education</span>
-                        <p>The process of placing a child in a special education program can be stressful, and sometimes
-                            scary, no matter which country you’re living in.</p>
-                        <a class="card-read_more" href="">Read More</a>
+
+    <!-- for interactive map -->
+    <section class="map_carousel">
+
+        <h4>Ulpans for olim hadashim</h4>
+        <div class="owl-carousel owl-carousel-1">
+            <div class="item">
+                <img src="images/Israel-south.png">
+                <div class="south">
+                    <p id="south">South</p>
+                    <div class="labels" data-popup="popup1">
+                        <img src="images/Location.png" alt="ulpan" id="eilat">
                     </div>
-                </article>
-                <article class="education-cards">
-                    <img src="./images/art2.png" alt="">
-                    <div class="card-text">
-                        <span>Special Education</span>
-                        <p>For many parents, their first experience with choosing a school comes only upon making
-                            Aliyah.
-                        </p>
-                        <a class="card-read_more" href="">Read More</a>
+                    <div id="popup1" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Eilat College of Management</p>
+                            <p class="phone">Phone: 073-2481976</p>
+                            <a href="https://goo.gl/maps/Wx4RLkdc3bh4LDyr6"> Click
+                                for details </a>
+                        </article>
                     </div>
-                </article>
-                <article class="education-cards">
-                    <img src="./images/art3.png" alt="">
-                    <div class="card-text">
-                        <span>Higher Education</span>
-                        <p>In total, Israel has 61 higher education institutions, with 10 universities and 51 colleges
-                            throughout the country.</p>
-                        <a class="card-read_more" href="">Read More</a>
-                    </div>
-                </article>
-                <article class="education-cards">
-                    <img src="./images/art4.png" alt="">
-                    <div class="card-text">
-                        <span>Degrees & Licensing</span>
-                        <p>In order to pursue an advanced degree in Israel, you must submit your foreign degree to the
-                            Israeli university
-                            you wish to attend.</p>
-                        <a class="card-read_more" href="">Read More</a>
-                    </div>
-                </article>
+
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="healthcare_section">
-        <img class="health-img" src="./images/health Right Graphic.png" alt="image">
-        <h3 class="wow fadeIn" data-wow-delay="0.4s">Healthcare</h3>
-        <div class="container">
-            <h4 class="wow fadeIn" data-wow-delay="0.4s">Kupat Cholim</h4>
-            <p class="wow fadeIn" data-wow-delay="0.4s">New Olim will have the opportunity to register for health care upon arrival at Ben Gurion Airport.
-                Researching which
-                healthcare provider offers the best services in your new Israeli community will better prepare you for
-                your decision. If
-                you have a pre-existing Israeli status, please see the following <a href="">link</a> to to clarify your
-                health care registration.
-            </p>
-            <p class="wow fadeIn" data-wow-delay="0.4s">Each health plan offers several levels of service:</p>
-            <p class="wow fadeIn" data-wow-delay="0.4s"> - The basic basket of healthcare services<br>
-                - Supplemental insurance<br>
-                - Long-term care insurance.<br>
-            </p>
-            <div class="healthcare_cards-wrapper">
-                <article class="healthcare-card wow fadeIn" data-wow-delay="0.5s">
-                    <img src="./images/maccabi.png" alt="image">
-                    <div class="health_card-text">
-                        <h5>Maccabi Healthcare Services</h5>
-                        <span>Phone: 1-700-505-353 or *3555</span>
-                        <a href="https://www.maccabi4u.co.il/1781-he/Maccabi.aspx">English Site</a>
+            <div class="item">
+                <img src="images/Israel-center.png">
+                <div class="center">
+                    <!-- <p id="center">Center</p> -->
+                    <div class="labels" data-popup="popup2">
+                        <img src="images/Location.png" alt="ulpan" id="ashdod">
                     </div>
-                </article>
-                <article class="healthcare-card wow fadeIn" data-wow-delay="1s">
-                    <img src="./images/clalit.png" alt="image">
-                    <div class="health_card-text">
-                        <h5>Clalit Healthcare Services</h5>
-                        <span>Phone: 1-222-2700 or *2700</span>
-                        <a href="https://www.clalit.co.il/he/info/entitlements/Pages/englishrights.aspx">English
-                            Site</a>
+                    <div id="popup2" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan Ashdod</p>
+                            <p class="phone">Phone: 08-8560131</p>
+                            <a href="https://goo.gl/maps/GDT4QYmmEVKA39Tr8"> Click
+                                for details </a>
+                        </article>
                     </div>
-                </article>
-                <article class="healthcare-card wow fadeIn" data-wow-delay="1.5s">
-                    <img src="./images/leumit.png" alt="image">
-                    <div class="health_card-text">
-                        <h5>Leumit Healthcare Services</h5>
-                        <span>Phone: 1-700-507-507 or *507</span>
-                        <a href="https://www.leumit.co.il/eng/home/">English Site</a>
+                    <div class="labels" data-popup="popup3">
+                        <img src="images/Location.png" alt="ulpan" id="ashkelon">
                     </div>
-                </article>
-                <article class="healthcare-card wow fadeIn" data-wow-delay="2s">
-                    <img src="./images/meuhedet.png" alt="image">
-                    <div class="health_card-text">
-                        <h5>Meuhedet Healthcare Services</h5>
-                        <span>Phone: 1-222-3833 or *3833</span>
-                        <a href="https://www.meuhedet.co.il/en/">English Site</a>
+                    <div id="popup3" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan Ashkelon</p>
+                            <p class="phone">Phone: 08-6792321</p>
+                            <a href="https://goo.gl/maps/r72eFFaPMZKJctWW6"> Click
+                                for details </a>
+                        </article>
                     </div>
-                </article>
+
+                    <div class="labels" data-popup="popup7">
+                        <img src="images/Location.png" alt="ulpan" id="rishon">
+                    </div>
+                    <div id="popup7" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan Rishon LeTsiyon</p>
+                            <p class="phone">Phone: 03-9662482</p>
+                            <a href="https://goo.gl/maps/UGVhzkVEjUDCFqfG9"> Click
+                                for details </a>
+                        </article>
+                    </div>
+                    <div class="labels" data-popup="popup8">
+                        <img src="images/Location.png" alt="ulpan" id="telaviv">
+                    </div>
+                    <div id="popup8" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan Gordon Tel Aviv</p>
+                            <p class="phone">Phone: 03-5223181</p>
+                            <a href="https://goo.gl/maps/P77RRVa8LP8umfQ76"> Click
+                                for details </a>
+                        </article>
+                    </div>
+                    <div class="labels" data-popup="popup9">
+                        <img src="images/Location.png" alt="ulpan" id="petah">
+                    </div>
+                    <div id="popup9" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan Petah Tikva</p>
+                            <p class="phone">Phone: 03-9246752</p>
+                            <a href="https://goo.gl/maps/waaXbRysorbPvgyX9"> Click
+                                for details </a>
+                        </article>
+                    </div>
+                    <div class="labels" data-popup="popup10">
+                        <img src="images/Location.png" alt="ulpan" id="raanana">
+                    </div>
+                    <div id="popup10" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan Raanana</p>
+                            <p class="phone">Phone: 03-7628360</p>
+                            <a href="https://goo.gl/maps/sL4vWneFZytkBTi68"> Click
+                                for details </a>
+                        </article>
+                    </div>
+                    <div class="labels" data-popup="popup11">
+                        <img src="images/Location.png" alt="ulpan" id="jerusalem">
+                    </div>
+                    <div id="popup11" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan-Or Jerusalem</p>
+                            <p class="phone">Phone: 02-5611132</p>
+                            <a href="https://goo.gl/maps/9WnU9izWYdbRP8iT7"> Click
+                                for details </a>
+                        </article>
+                    </div>
+
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="ulpan_section">
-        <div class="ulpan_text-wrapper">
-            <h3 class="wow fadeIn" data-wow-delay="0.4s">Ulpan</h3>
-            <span class="wow fadeIn" data-wow-delay="0.6s">Learning Hebrew is one of the most important contributors to a new immigrant's successful integration into Israeli
-            society. <br> See Ulpans near you</span>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <img src="./images/logo white.svg" class="logo_white" alt="logo">
-            <ul class="footer_list">
-                <li><a href="">TERMS AND CONDITIONS</a></li>
-                <li><a href="">PRIVACY POLICY</a></li>
-                <li><a href="">CONTACT US</a></li>
-            </ul>
-            <form action="#">
-                <h5>NEWSLETTER SUBSCRIPTION</h5>
-                <label for="email_request"></label>
-                <input type="text" id="email_request" name="email_request" placeholder="E-mail">
-                <button type="submit">SUBSCRIBE</button>
-            </form>
+            <div class="item">
+                <img src="images/Israel-north.png">
+                <div class="north">
+                    <p id="north">North</p>
+
+                    <div class="labels" data-popup="popup6">
+                        <img src="images/Location.png" alt="ulpan" id="netanya">
+                    </div>
+                    <div id="popup6" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan Netanya</p>
+                            <p class="phone">Phone: 09-8341223</p>
+                            <a href="https://goo.gl/maps/PhTY2vKEPwVWgNCh6"> Click
+                                for details </a>
+                        </article>
+                    </div>
+                    <div class="labels" data-popup="popup12">
+                        <img src="images/Location.png" alt="ulpan" id="karmiel">
+                    </div>
+                    <div id="popup12" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Ulpan Karmiel</p>
+                            <p class="phone">Phone: 054-4394636</p>
+                            <a href="https://goo.gl/maps/bdozNztJBkg2wtq76"> Click
+                                for details </a>
+                        </article>
+                    </div>
+                    <div class="labels" data-popup="popup13">
+                        <img src="images/Location.png" alt="ulpan" id="haifa">
+                    </div>
+                    <div id="popup13" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Firsthand Ulpan Haifa</p>
+                            <p class="phone">Phone: 054-4612635</p>
+                            <a href="https://goo.gl/maps/AKk42qaVFHBZjrEw7"> Click
+                                for details </a>
+                        </article>
+
+                    </div>
+                    <div class="labels" data-popup="popup14">
+                        <img src="images/Location.png" alt="ulpan" id="kiryat">
+                    </div>
+                    <div id="popup14" class="popup">
+                        <article class="popup_ulpan">
+                            <p class="ulpan_name">Sapir Absorption Center Ulpan Kiryat Yam</p>
+                            <p class="phone">Phone: 046-055113</p>
+                            <a href="https://goo.gl/maps/VDWgDuMRJ1oMrXnE97"> Click
+                                for details </a>
+                        </article>
+                    </div>
+                </div>
             </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/education_carousel.js"></script>
-    <script src="./js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+            <section class="education_section">
+                <h3 class="wow fadeIn" data-wow-delay="0.5">Education</h3>
+                <div class="education_section-wrapper">
+                    <div class="owl-carousel owl-theme owl-carousel-2 ">
+                        <article class="education-cards">
+                            <img src="./images/art1.png" alt="">
+                            <div class="card-text">
+                                <span>Child and Teen Education</span>
+                                <p>The process of placing a child in a special education program can be stressful, and
+                                    sometimes
+                                    scary, no matter which country you’re living in.</p>
+                                <a class="card-read_more" href="">Read More</a>
+                            </div>
+                        </article>
+                        <article class="education-cards">
+                            <img src="./images/art2.png" alt="">
+                            <div class="card-text">
+                                <span>Special Education</span>
+                                <p>For many parents, their first experience with choosing a school comes only upon
+                                    making
+                                    Aliyah.
+                                </p>
+                                <a class="card-read_more" href="">Read More</a>
+                            </div>
+                        </article>
+                        <article class="education-cards">
+                            <img src="./images/art3.png" alt="">
+                            <div class="card-text">
+                                <span>Higher Education</span>
+                                <p>In total, Israel has 61 higher education institutions, with 10 universities and 51
+                                    colleges
+                                    throughout the country.</p>
+                                <a class="card-read_more" href="">Read More</a>
+                            </div>
+                        </article>
+                        <article class="education-cards">
+                            <img src="./images/art4.png" alt="">
+                            <div class="card-text">
+                                <span>Degrees & Licensing</span>
+                                <p>In order to pursue an advanced degree in Israel, you must submit your foreign degree
+                                    to the
+                                    Israeli university
+                                    you wish to attend.</p>
+                                <a class="card-read_more" href="">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <section class="healthcare_section">
+                <img class="health-img" src="./images/health Right Graphic.png" alt="image">
+                <h3 class="wow fadeIn" data-wow-delay="0.4s">Healthcare</h3>
+                <div class="container">
+                    <h4 class="wow fadeIn" data-wow-delay="0.4s">Kupat Cholim</h4>
+                    <p class="wow fadeIn" data-wow-delay="0.4s">New Olim will have the opportunity to register for
+                        health care upon arrival at Ben Gurion Airport.
+                        Researching which
+                        healthcare provider offers the best services in your new Israeli community will better prepare
+                        you for
+                        your decision. If
+                        you have a pre-existing Israeli status, please see the following <a href="">link</a> to to
+                        clarify your
+                        health care registration.
+                    </p>
+                    <p class="wow fadeIn" data-wow-delay="0.4s">Each health plan offers several levels of service:</p>
+                    <p class="wow fadeIn" data-wow-delay="0.4s"> - The basic basket of healthcare services<br>
+                        - Supplemental insurance<br>
+                        - Long-term care insurance.<br>
+                    </p>
+                    <div class="healthcare_cards-wrapper">
+                        <article class="healthcare-card wow fadeIn" data-wow-delay="0.5s">
+                            <img src="./images/maccabi.png" alt="image">
+                            <div class="health_card-text">
+                                <h5>Maccabi Healthcare Services</h5>
+                                <span>Phone: 1-700-505-353 or *3555</span>
+                                <a href="https://www.maccabi4u.co.il/1781-he/Maccabi.aspx">English Site</a>
+                            </div>
+                        </article>
+                        <article class="healthcare-card wow fadeIn" data-wow-delay="1s">
+                            <img src="./images/clalit.png" alt="image">
+                            <div class="health_card-text">
+                                <h5>Clalit Healthcare Services</h5>
+                                <span>Phone: 1-222-2700 or *2700</span>
+                                <a href="https://www.clalit.co.il/he/info/entitlements/Pages/englishrights.aspx">English
+                                    Site</a>
+                            </div>
+                        </article>
+                        <article class="healthcare-card wow fadeIn" data-wow-delay="1.5s">
+                            <img src="./images/leumit.png" alt="image">
+                            <div class="health_card-text">
+                                <h5>Leumit Healthcare Services</h5>
+                                <span>Phone: 1-700-507-507 or *507</span>
+                                <a href="https://www.leumit.co.il/eng/home/">English Site</a>
+                            </div>
+                        </article>
+                        <article class="healthcare-card wow fadeIn" data-wow-delay="2s">
+                            <img src="./images/meuhedet.png" alt="image">
+                            <div class="health_card-text">
+                                <h5>Meuhedet Healthcare Services</h5>
+                                <span>Phone: 1-222-3833 or *3833</span>
+                                <a href="https://www.meuhedet.co.il/en/">English Site</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </section>
+
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="owl.carousel.js"></script>
+            <script type="module" src="scripts.js"></script>
+
+
+            <section class="ulpan_section">
+                <div class="ulpan_text-wrapper">
+                    <h3 class="wow fadeIn" data-wow-delay="0.4s">Ulpan</h3>
+                    <span class="wow fadeIn" data-wow-delay="0.6s">Learning Hebrew is one of the most important
+                        contributors to a new immigrant's successful integration into Israeli
+                        society. <br> See Ulpans near you</span>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                    <img src="./images/logo white.svg" class="logo_white" alt="logo">
+                    <ul class="footer_list">
+                        <li><a href="">TERMS AND CONDITIONS</a></li>
+                        <li><a href="">PRIVACY POLICY</a></li>
+                        <li><a href="">CONTACT US</a></li>
+                    </ul>
+                    <form action="#">
+                        <h5>NEWSLETTER SUBSCRIPTION</h5>
+                        <label for="email_request"></label>
+                        <input type="text" id="email_request" name="email_request" placeholder="E-mail">
+                        <button type="submit">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </footer>
+            <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/education_carousel.js"></script>
+            <script src="./js/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
 </body>
 
 </html>
